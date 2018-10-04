@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -17,6 +18,8 @@ namespace LuckParser
         private static extern FileType GetFileType(IntPtr handle);
 
         private const int AttachParentProcess = -1;
+
+        public static string Version { get; } = Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
         private enum StandardHandle
         {

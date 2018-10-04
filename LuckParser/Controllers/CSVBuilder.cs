@@ -86,7 +86,7 @@ namespace LuckParser.Controllers
             }
             string bossname = _log.FightData.Name;
             //header
-            WriteLine(new [] { "Elite Insights Version", Application.ProductVersion });
+            WriteLine(new [] { "Elite Insights Version", Program.Version });
             WriteLine(new [] { "ARC Version", _log.LogData.BuildVersion});
             WriteLine(new [] { "Boss ID", _log.FightData.ID.ToString() });
             WriteLine(new [] { "Recorded By", _log.LogData.PoV.Split(':')[0] });

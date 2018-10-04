@@ -20,7 +20,7 @@ namespace LuckParser
         {
             InitializeComponent();
             //display version
-            string version = Application.ProductVersion;
+            string version = Program.Version;
             VersionLabel.Text = version;
             _logsFiles = new List<string>();
             btnCancel.Enabled = false;
