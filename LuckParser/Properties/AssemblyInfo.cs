@@ -21,8 +21,9 @@ using System.Runtime.InteropServices;
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("6135677e-6c0e-42de-925e-1995e52e5ac5")]
 [assembly: AssemblyVersion("1.8.*")]
-// Please do NOT change the AssemblyFileVersion often. Every time this is changed the user settings are lost.
-// Change the 3rd or 4th part of the AssemblyVersion instead on releases.
+// The AssemblyFileVersion would be relevant when using Application.LocalUserAppDataPath.
+// The user settings are saved under a different folder, which uses the AssemblyVersion instead,
+// so shortening the FileVersion has no benefit in that case...
 [assembly: AssemblyFileVersion("1.8")]
 
 // Version information for an assembly consists of the following four values:
